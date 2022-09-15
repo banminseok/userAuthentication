@@ -22,4 +22,5 @@ app.use(localsMiddleware);
 app.use("/", userRouter);
 
 // Codesanbox does not need PORT :)
-app.listen(() => console.log(`✅  Server Ready!`));
+//app.listen(() => console.log(`✅  Server Ready! `));
+app.listen(4000, () => console.log(`✅  Server Ready! `));
