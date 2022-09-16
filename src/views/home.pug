@@ -2,8 +2,9 @@ extends templates/layout
 
 block content
   h1=pageTitle
-  nav    
-    div
-      a(href="/join") 회원가입 , 
-      a(href="/login") 로그인 &rarr;
-    div 
+  hr
+  if loggedIn
+    h2 Welcome
+    p Name : #{loggedInUser.name}
+    p username : #{loggedInUser.username}
+  
